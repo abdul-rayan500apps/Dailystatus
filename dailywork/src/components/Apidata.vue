@@ -16,7 +16,7 @@ methods: {
     getData(){
 let response= new Promise((resolve, reject) => {         
 // Using axios to fetch API URL         
-axios.get("http://myjson.dit.upm.es/api/bins/fov1").then((response) => {                
+axios.get("https://api.publicapis.org/entries").then((response) => {                
  // resolve when response is received                 
  resolve(response.data);          
     }).catch((error) => {         
