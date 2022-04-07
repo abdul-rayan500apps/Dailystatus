@@ -5,6 +5,7 @@ import Home from "@/components/HelloWorld.vue";
 import Cookies from "@/components/cookies.vue";
 import BTable from "@/components/Table.vue";
 import ApiFetchData from "@/components/Apidata.vue";
+import AxioS from "@/components/api2.vue";
 
 
 
@@ -38,7 +39,11 @@ const routes = [
         name:"ApiFetchData",
         component:ApiFetchData
     },
-
+    {
+        path:'/api2',
+        name:"AxioS",
+        component:AxioS
+    },
 
 
 
