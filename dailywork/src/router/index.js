@@ -4,6 +4,7 @@ import Add from "@/components/Add.vue"
 import Home from "@/components/HelloWorld.vue";
 import Cookies from "@/components/cookies.vue";
 import BTable from "@/components/Table.vue";
+import ApiFetchData from "@/components/Apidata.vue";
 
 
 
@@ -31,6 +32,11 @@ const routes = [
         path:'/table',
         name:"BTable",
         component:BTable
+    },
+    {
+        path:'/api',
+        name:"ApiFetchData",
+        component:ApiFetchData
     },
 
 
