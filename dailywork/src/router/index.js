@@ -6,6 +6,11 @@ import Cookies from "@/components/cookies.vue";
 import BTable from "@/components/Table.vue";
 import ApiFetchData from "@/components/Apidata.vue";
 import AxioS from "@/components/api2.vue";
+import FormTags from "@/components/FormTags.vue";
+import QuestioN2 from "@/components/Question2";
+import QuestioN7 from "@/components/Question7";
+import QuestioN6 from "@/components/Question6"
+
 
 
 
@@ -44,6 +49,29 @@ const routes = [
         name:"AxioS",
         component:AxioS
     },
+    {
+        path:'/form',
+        name:"FormTags",
+        component:FormTags,
+    },
+    {
+        path:'/math',
+        name:"QuestioN2",
+        component:QuestioN2,
+    },
+    
+    {
+        path:'/data',
+        name:"QuestioN7",
+        component:QuestioN7,
+    },
+    {
+        path:'/drop',
+        name:"QuestioN6",
+        component:QuestioN6,
+    },
+
+
 
 
 
