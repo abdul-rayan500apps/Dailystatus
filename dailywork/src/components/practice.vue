@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div>
     <form name="form1">
       <label for="" name="num1">enter the 1st number</label>
@@ -6,7 +6,7 @@
       <label for="" name="num2">enter 2nd number</label>
       <input type="text" name="num2" id="sep2" /><br />
       <button @click="multi()">multiply</button>
-      
+
       <button @click="div()">division</button>
       <h5>the result is :</h5>
       <p id="sap3"></p>
