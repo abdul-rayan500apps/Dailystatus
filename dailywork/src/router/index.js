@@ -19,12 +19,24 @@ import BsInputs from "@/components/BSINPUTS";
 import DropDown from "@/components/Q6";
 import ARRAy from "@/components/Asg3Qs1";
 import ObjecT from "@/components/Asg3Qst3";
-
+import sampleApis from "@/components/Indiantrain";
+import SearcH from "@/components/Searchfilter";
+import As6Q1 from "@/components/As6Q1";
+import As6Q2 from "@/components/As6Q2"
 
 
 vue.use(Router)
 
 const routes = [
+    
+    { path: '/as6q1', name: "As6Q1", component:As6Q1 },
+
+    {path:'/as6q2', name:"As6Q2",component:As6Q2},
+
+    { path: '/sampleapi', name: "sampleApis", component: sampleApis },
+
+    { path: '/search', name: "SearcH", component: SearcH },
+
     { path: '/', name: "Home", component: Home },
 
     { path: '/add', name: "Add", component: Add },
@@ -47,9 +59,8 @@ const routes = [
 
     { path: '/1ST', name: "QuestioN1", component: QuestioN1, },
 
-    {
-        path: '/4TH', name: "QuestioN4", component: QuestioN4,
-    },
+    { path: '/4TH', name: "QuestioN4", component: QuestioN4, },
+
     { path: '/5TH', name: "QuestioN5", component: QuestioN5, },
 
     { path: '/3rd', name: "QuestioN3", component: QuestioN3, },
