@@ -22,7 +22,10 @@ import ObjecT from "@/components/Asg3Qst3";
 import sampleApis from "@/components/Indiantrain";
 import SearcH from "@/components/Searchfilter";
 import As6Q1 from "@/components/As6Q1";
-import As6Q2 from "@/components/As6Q2"
+import As6Q2 from "@/components/As6Q2";
+import As6Q2a from "@/components/As6Q2a";
+import AS6q1 from "@/components/As6Q-1"
+import AS6q2 from "@/components/As6Q-2"
 
 
 vue.use(Router)
@@ -30,6 +33,13 @@ vue.use(Router)
 const routes = [
     
     { path: '/as6q1', name: "As6Q1", component:As6Q1 },
+
+             // 13/APR/WORK/ //
+   {path:'/as6q-1', name:"AS6q1",component:AS6q1},
+
+   {path:'/as6q-2', name:"AS6q2",component:AS6q2},
+
+    {path:'/as6q2a',name:"As6Q2a",component:As6Q2a},
 
     {path:'/as6q2', name:"As6Q2",component:As6Q2},
 
