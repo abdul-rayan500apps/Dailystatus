@@ -6,8 +6,8 @@
       v-model="value"
       :options="countries"
       :totalPagesChanged="totalPages"
-      :current-page="currentPage"
-    ></b-form-select>
+      :current-page="currentPage">
+      </b-form-select>
 
     <b-button variant="primary" @click="getData()">click</b-button>
 
