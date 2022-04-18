@@ -10,7 +10,6 @@ import VueAxios from 'vue-axios'
 
 
 
-
 Vue.config.productionTip = false
 Vue.use(VueCookies);
 Vue.use(BootstrapVue)
@@ -19,12 +18,12 @@ Vue.use(VueAxios, axios)
 
 
 
-let vueRoute = new Vue({
-  router,
 
-  render: h => h(App),
+let vueRoute = new Vue({
+    router,
+
+    render: h => h(App),
 }).$mount('#app')
 
 
 export default vueRoute
-

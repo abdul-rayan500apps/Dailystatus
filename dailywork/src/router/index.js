@@ -26,22 +26,31 @@ import As6Q2 from "@/components/As6Q2";
 import As6Q2a from "@/components/As6Q2a";
 import AS6q1 from "@/components/As6Q-1"
 import AS6q2 from "@/components/As6Q-2"
-
+import matHS from "@/components/circle"
+import UniquE from "@/components/uniquearray"
+import LogIN from '@/components/Login'
+import RestApi from '@/components/Rest'
 
 vue.use(Router)
 
 const routes = [
-    
-    { path: '/as6q1', name: "As6Q1", component:As6Q1 },
+    { path: '/login', name: "LogIN", component: LogIN },
 
-             // 13/APR/WORK/ //
-   {path:'/as6q-1', name:"AS6q1",component:AS6q1},
+    { path: '/rest', name: "RestApi", component: RestApi },
 
-   {path:'/as6q-2', name:"AS6q2",component:AS6q2},
+    { path: '/as6q1', name: "As6Q1", component: As6Q1 },
+    ///////apr14////////
+    { path: '/circle', name: "maHS", component: matHS },
+    { path: '/unique', name: "UniquE", component: UniquE },
 
-    {path:'/as6q2a',name:"As6Q2a",component:As6Q2a},
+    // 13/APR/WORK/ //
+    { path: '/as6q-1', name: "AS6q1", component: AS6q1 },
 
-    {path:'/as6q2', name:"As6Q2",component:As6Q2},
+    { path: '/as6q-2', name: "AS6q2", component: AS6q2 },
+
+    { path: '/as6q2a', name: "As6Q2a", component: As6Q2a },
+
+    { path: '/as6q2', name: "As6Q2", component: As6Q2 },
 
     { path: '/sampleapi', name: "sampleApis", component: sampleApis },
 

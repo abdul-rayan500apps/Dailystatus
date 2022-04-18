@@ -1,0 +1,22 @@
+<html>
+<h1>
+    map function with object
+</h1>
+
+</html>
+<script>
+    var arr = [{
+        price: "100",
+        product: "mobile"
+    }, {
+        price: "300",
+        product: "laptop"
+    }, {
+        price: "600",
+        product: "pc"
+    }, ];
+    var newArr = arr.map(function(value) {
+        return value.product;
+    });
+    console.log(newArr)
+</script>
