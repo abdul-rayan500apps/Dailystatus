@@ -20,7 +20,7 @@ export default {
     async getData() {
       try {
         const response = await this.$http.get(
-          "http://jsonplaceholder.typicode.com/posts"
+          "https://covid-19-statistics.p.rapidapi.com/regions"
         );
         this.posts = response.data;
       } catch (error) {
