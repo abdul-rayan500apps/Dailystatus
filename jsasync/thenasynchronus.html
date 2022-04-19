@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <h1>
+        Using then() as an asynchronous function
+    </h1>
+    <script>
+        var demo = new Promise((resolve, reject) => {
+            resolve(1);
+        })
+        let call = demo.then(
+            (value) => {
+                console.log(value);
+                return ++value;
+            },
+            (message) => {
+                document.write(message);
+            });
+        console.log(call);
+        setTimeout(() => {
+            console.log(call);
+        });
+    </script>
+</body>
+
+</html>
