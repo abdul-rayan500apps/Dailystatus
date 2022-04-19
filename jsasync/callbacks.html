@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2>javascript Function Sequence</h2>
+    <p>java script functions executed in the sequence they are called.</p>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(some) {
+            document.getElementById("demo").innerHTML = some;
+        }
+        myfirst = () => myDisplayer("hello");
+        mysecond = () => myDisplayer("good bye");
+
+
+
+        mysecond(myDisplayer);
+    </script>
+</body>
+
+</html>
