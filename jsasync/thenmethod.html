@@ -1,0 +1,27 @@
+<html>
+<h1>use of .then method in finctions</h1>
+<p id="demo"></p>
+<script>
+    function demo() {
+        document.write("function called !!<br>")
+        return Promise.resolve(1);
+    }
+    demo().then(
+        (value) => {
+            document.write(value);
+            return ++value;
+        },
+        (message) => {
+            document.write(message);
+        }
+    ).then(
+        (value) => {
+            document.write(value);
+        },
+        (message) => {
+            document.write(message);
+        }
+    )
+</script>
+
+<body>
