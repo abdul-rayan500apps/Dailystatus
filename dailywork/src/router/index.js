@@ -30,11 +30,12 @@ import matHS from "@/components/circle"
 import UniquE from "@/components/uniquearray"
 import LogIN from '@/components/Login'
 import RestApi from '@/components/Rest'
-
+import GetRequest from '@/components/practice/Fetch'
 vue.use(Router)
 
 const routes = [
     { path: '/login', name: "LogIN", component: LogIN },
+    { path: '/fetch', name: "GetRequest", component: GetRequest },
 
     { path: '/rest', name: "RestApi", component: RestApi },
 
