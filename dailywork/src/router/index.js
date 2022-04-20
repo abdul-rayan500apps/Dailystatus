@@ -31,9 +31,42 @@ import UniquE from "@/components/uniquearray"
 import LogIN from '@/components/Login'
 import RestApi from '@/components/Rest'
 import GetRequest from '@/components/practice/Fetch'
+//////aprl20/as-8///////////////////////
+import QstN1 from '@/components/Assignment-8(20apr)/Qstn1'
+import QstN2 from '@/components/Assignment-8(20apr)/Qstn2'
+import QstN3 from '@/components/Assignment-8(20apr)/Qstn3'
+import QstN4 from '@/components/Assignment-8(20apr)/Qstn4'
+import QstN5 from '@/components/Assignment-8(20apr)/Qstn5'
+import QstN6 from '@/components/Assignment-8(20apr)/Qstn6'
+import QstN7 from '@/components/Assignment-8(20apr)/Qstn7'
+import QstN8 from '@/components/Assignment-8(20apr)/Qstn8'
+import QstN9 from '@/components/Assignment-8(20apr)/Qstn9'
+import QstN10 from '@/components/Assignment-8(20apr)/Qstn10'
+
+
+
 vue.use(Router)
 
 const routes = [
+    //////aprl20/as-8///////////////////////
+    { path: '/as8q1', name: "QstN1", component: QstN1 },
+    { path: '/as8q2', name: "QstN2", component: QstN2 },
+    { path: '/as8q3', name: "QstN3", component: QstN3 },
+    { path: '/as8q4', name: "QstN4", component: QstN4 },
+    { path: '/as8q5', name: "QstN5", component: QstN5 },
+    { path: '/as8q6', name: "QstN6", component: QstN6 },
+    { path: '/as8q7', name: "QstN7", component: QstN7 },
+    { path: '/as8q8', name: "QstN8", component: QstN8 },
+    { path: '/as8q9', name: "QstN9", component: QstN9 },
+    { path: '/as8q10', name: "QstN10", component: QstN10 },
+
+
+
+
+
+
+
+
     { path: '/login', name: "LogIN", component: LogIN },
     { path: '/fetch', name: "GetRequest", component: GetRequest },
 
