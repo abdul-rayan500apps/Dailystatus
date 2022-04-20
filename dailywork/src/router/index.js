@@ -43,11 +43,19 @@ import QstN8 from '@/components/Assignment-8(20apr)/Qstn8'
 import QstN9 from '@/components/Assignment-8(20apr)/Qstn9'
 import QstN10 from '@/components/Assignment-8(20apr)/Qstn10'
 
+////practice aprl20//////////
+
+import TablE from '@/components/practice/Table'
+
 
 
 vue.use(Router)
 
 const routes = [
+    { path: '/table', name: "TablE", component: TablE },
+
+
+
     //////aprl20/as-8///////////////////////
     { path: '/as8q1', name: "QstN1", component: QstN1 },
     { path: '/as8q2', name: "QstN2", component: QstN2 },
