@@ -46,13 +46,24 @@ import QstN10 from '@/components/Assignment-8(20apr)/Qstn10'
 ////practice aprl20//////////
 
 import TablE from '@/components/practice/Table'
-
-
+//////////paractice aprl 21/////////
+/////bootstrap///////////////
+import ExamplE1 from '@/components/Bootstrapvue/Example1'
+import ForeacH from '@/components/practice/foreach'
+import ForeacH1 from '@/components/practice/foreach1'
+import MaP from '@/components/practice/map'
+import FilteR from '@/components/practice/filterarray'
 
 vue.use(Router)
 
 const routes = [
     { path: '/table', name: "TablE", component: TablE },
+    { path: '/example', name: "ExamplE1", component: ExamplE1 },
+    { path: '/foreach', name: "ForeacH", component: ForeacH },
+    { path: '/foreach1', name: "ForeacH1", component: ForeacH1 },
+    { path: '/map', name: "MaP", component: MaP },
+    { path: '/filter', name: "FilteR", component: FilteR },
+
 
 
 

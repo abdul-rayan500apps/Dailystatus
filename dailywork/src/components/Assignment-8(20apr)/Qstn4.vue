@@ -1,13 +1,8 @@
 <template>
   <div id="app">
      
-    <ul>
-      <li v-for="user in users" :key="user.id">
-         {{user.name}}
-         {{user.email}}
-         {{user._id}}
-       </li>
-    </ul>
+       <b-table striped hover :items="users" :fields="userfields"></b-table>
+        
   </div>
 </template>
 
@@ -19,8 +14,9 @@ export default {
   data() {
     return {
       users: usersData,
-      
-    };
+      userfields:["name","_id","email"]
+    }
   },
-};
+  
+}
 </script>
