@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>finding id</title>
+</head>
+
+<body>
+    <p id="id"></p>
+    <button type="button" onclick=findId()>button</button><br><br>
+    <script>
+        a = [{
+            id: 20,
+            name: 'Captain Piett'
+        }, {
+            id: 24,
+            name: 'General Veers'
+        }, {
+            id: 56,
+            name: 'Admiral Ozzel'
+        }, {
+            id: 88,
+            name: 'Commander Jerjerrod'
+        }];
+
+        function findId() {
+            for (i = 0; i < a.length; i++) {
+                if (a[i].id = 88) {
+                    document.getElementById("id").innerHTML = "Index of 88 is" + a.indexOf(i);
+                } else {
+                    alert("Number is not equal to 88")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display the array of id's for all Users</title>
+</head>
+
+<body>
+    <h2>forEach loop Indexing</h2>
+    <p id="demo"></p>
+    <script>
+        array = [{
+            id: 20,
+            name: 'Captain Piett'
+        }, {
+            id: 24,
+            name: 'General Veers'
+        }, {
+            id: 56,
+            name: 'Admiral Ozzel'
+        }, {
+            id: 88,
+            name: 'Commander Jerjerrod'
+        }];
+
+        document.getElementById("demo").innerHTML = array[0].id + "," + array[1].id + "," + array[2].id + "," + array[3].id;
+    </script>
+</body>
+
+</html>

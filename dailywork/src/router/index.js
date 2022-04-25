@@ -53,10 +53,48 @@ import ForeacH from '@/components/practice/foreach'
 import ForeacH1 from '@/components/practice/foreach1'
 import MaP from '@/components/practice/map'
 import FilteR from '@/components/practice/filterarray'
-
+///aprl22///
+import PaginatioN from '@/components/Bootstrapvue/pagination'
+import Es6S from '@/components/practice/es6'
+import FetchinG from '@/components/promises/fetching'
+import TimeouT from '@/components/promises/Timeout'
+import AxioS1 from '@/components/promises/Axios1'
+import AxioS2 from '@/components/promises/Axios2'
+import AxioS3 from '@/components/promises/Axios3'
+import FunctioN from '@/components/practice/functions'
+import ParameterS from '@/components/practice/funwithpara'
+import AdditioN from '@/components/practice/addition'
+import SuM from '@/components/practice/sum'
+///////asignment-9 -25 aprl//////
+import QsT1 from '@/components/Assignment9(25-apr)/Qst1'
+import QsT2 from '@/components/Assignment9(25-apr)/Qst2'
+import QsT4 from '@/components/Assignment9(25-apr)/Qst4parent'
+import ParentemiT from '@/components/Assignment9(25-apr)/Qst5bemitparent'
+import QsT6 from '@/components/Assignment9(25-apr)/Qst6'
 vue.use(Router)
 
 const routes = [
+    { path: '/q1', name: "QsT1", component: QsT1 },
+    { path: '/q2', name: "QsT2", component: QsT2 },
+    { path: '/q4', name: "QsT4", component: QsT4 },
+    { path: '/q5', name: "ParentemiT", component: ParentemiT },
+    { path: '/q6', name: "QsT6", component: QsT6 },
+
+    /////25aprl////////
+    { path: '/fun', name: "FunctioN", component: FunctioN },
+    { path: '/para', name: "ParameterS ", component: ParameterS },
+    { path: '/addition', name: "AdditioN ", component: AdditioN },
+    { path: '/sum', name: "SuM", component: SuM },
+
+    { path: '/pagination', name: "PaginatioN", component: PaginatioN },
+    { path: '/es6', name: "Es6S", component: Es6S },
+    { path: '/fetching', name: "FetchinG", component: FetchinG },
+    { path: '/time', name: "TimeouT", component: TimeouT },
+    { path: '/axios1', name: " AxioS1", component: AxioS1 },
+    { path: '/axios2', name: " AxioS1", component: AxioS2 },
+    { path: '/axios3', name: " AxioS3", component: AxioS3 },
+
+    ///
     { path: '/table', name: "TablE", component: TablE },
     { path: '/example', name: "ExamplE1", component: ExamplE1 },
     { path: '/foreach', name: "ForeacH", component: ForeacH },
