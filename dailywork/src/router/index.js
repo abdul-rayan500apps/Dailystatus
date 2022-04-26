@@ -65,15 +65,38 @@ import FunctioN from '@/components/practice/functions'
 import ParameterS from '@/components/practice/funwithpara'
 import AdditioN from '@/components/practice/addition'
 import SuM from '@/components/practice/sum'
+import StatemenT from '@/components/practice/ifstatement'
+import IfelsE from '@/components/practice/ifelse'
+import ForLoop from '@/components/practice/forloop'
 ///////asignment-9 -25 aprl//////
 import QsT1 from '@/components/Assignment9(25-apr)/Qst1'
 import QsT2 from '@/components/Assignment9(25-apr)/Qst2'
 import QsT4 from '@/components/Assignment9(25-apr)/Qst4parent'
 import ParentemiT from '@/components/Assignment9(25-apr)/Qst5bemitparent'
 import QsT6 from '@/components/Assignment9(25-apr)/Qst6'
+////////assignmnet-10  -26 aprl///////
+import QsTN1 from '@/components/Assignment10(26-aprl)/Qst1'
+import QsTN2 from '@/components/Assignment10(26-aprl)/Qst2'
+import QsTN3 from '@/components/Assignment10(26-aprl)/Qst3'
+import QsTN4 from '@/components/Assignment10(26-aprl)/Qst4'
+import QsTN5 from '@/components/Assignment10(26-aprl)/Qst5'
+import QsTN6 from '@/components/Assignment10(26-aprl)/Qst6'
 vue.use(Router)
 
 const routes = [
+    ///////assignment-10///////////
+    { path: '/A1', name: "QsTN1", component: QsTN1 },
+    { path: '/A2', name: "QsTN2", component: QsTN2 },
+    { path: '/A3', name: "QsTN3", component: QsTN3 },
+    { path: '/A4', name: "QsTN4", component: QsTN4 },
+    { path: '/A5', name: "QsTN5", component: QsTN5 },
+    { path: '/A6', name: "QsTN6", component: QsTN6 },
+
+
+
+
+
+
     { path: '/q1', name: "QsT1", component: QsT1 },
     { path: '/q2', name: "QsT2", component: QsT2 },
     { path: '/q4', name: "QsT4", component: QsT4 },
@@ -85,6 +108,9 @@ const routes = [
     { path: '/para', name: "ParameterS ", component: ParameterS },
     { path: '/addition', name: "AdditioN ", component: AdditioN },
     { path: '/sum', name: "SuM", component: SuM },
+    { path: '/statement', name: "StatemenT", component: StatemenT },
+    { path: '/ifelse', name: "IfelsE", component: IfelsE },
+    { path: '/forloop', name: "ForLoop ", component: ForLoop },
 
     { path: '/pagination', name: "PaginatioN", component: PaginatioN },
     { path: '/es6', name: "Es6S", component: Es6S },
