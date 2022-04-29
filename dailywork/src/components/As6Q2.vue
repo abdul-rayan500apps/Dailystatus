@@ -28,16 +28,13 @@
 
               <b-col>Web-pages{{ data1.website_url }}</b-col>
             </b-row>
+            
           </b-card>
         </b-card-text>
       </b-card>
     </b-container>
 
-    <!--<b-table id="my_table" :items="items" :fields="fields" :per-page="perPage"
-
-:current-page="currentPage"
-
-small>-->
+    
 
     <b-pagination
       v-model="currentPage"

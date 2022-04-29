@@ -81,9 +81,25 @@ import QsTN3 from '@/components/Assignment10(26-aprl)/Qst3'
 import QsTN4 from '@/components/Assignment10(26-aprl)/Qst4'
 import QsTN5 from '@/components/Assignment10(26-aprl)/Qst5'
 import QsTN6 from '@/components/Assignment10(26-aprl)/Qst6'
+/////////////april 27 practice///////////////////
+import FetcH from '@/components/promises/fetch'
+/////aprl 28 assignment-11 /////////
+
+import AS10q1 from '@/components/Assignment-11(28)/q1'
+
+import AS10q2 from '@/components/Assignment-11(28)/q2'
+
+import ScrappinG from '@/components/Assignment-11(28)/q3'
+
+
+
 vue.use(Router)
 
 const routes = [
+    //////assignment-11//////////////
+    { path: '/A7', name: "AS10q1", component: AS10q1 },
+    { path: '/A8', name: "AS10q2", component: AS10q2 },
+    { path: '/A9', name: "ScrappinG", component: ScrappinG },
     ///////assignment-10///////////
     { path: '/A1', name: "QsTN1", component: QsTN1 },
     { path: '/A2', name: "QsTN2", component: QsTN2 },
@@ -91,7 +107,8 @@ const routes = [
     { path: '/A4', name: "QsTN4", component: QsTN4 },
     { path: '/A5', name: "QsTN5", component: QsTN5 },
     { path: '/A6', name: "QsTN6", component: QsTN6 },
-
+    ///////aprl 27//////////
+    { path: '/p1', name: "FetcH", component: FetcH },
 
 
 
