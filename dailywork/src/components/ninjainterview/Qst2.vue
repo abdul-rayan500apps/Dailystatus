@@ -23,7 +23,7 @@ export default {
   },
 
   watch: {
-    lower: function (val) {
+    lower(val) {
       this.lower = val;
       this.upper = this.lower.toUpperCase();
     },
