@@ -1,0 +1,51 @@
+vue-js documentation:
+use of v-bind=>((The v-bind directive is a Vue.js directive used to bind one or more attributes, or a component prop to an element. If that attribute is bonded to our data defined in Vue instance then dynamically changes can be observed as data changes.
+syntax:
+((v-bind:attribute="expression";))
+use of v-on =>((We can use the v-on directive, which we typically shorten to the @ symbol, to listen to DOM events and run some JavaScript when they're triggered. The usage would be v-on:click="handler" or with the shortcut, @click="handler".))
+use of v-html((The v-html directive is a Vue.js directive used to update a element’s innerHTML with our data. This is what separates it from v-text which means while v-text accepts string and treats it as a string it will accept string and render it into HTML. ))
+v-on:click.stop	Will isolate the event to this element and will not listen to click events higher up the DOM tree
+v-on:click.prevent	Will prevent the default behaviour of the element this is on
+v-on:click.capture	The event listener will be added in capture mode
+v-on:click.self	This will only trigger if the target of the event being called is the element itself
+v-on:click.once	With once, the method will only run once in one instance of the page
+how to add bootstap steps:1)yarn add install bootstrap@5.1.3 bootstrap-vue@2.21.2
+step:2)
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.config.productionTip = false
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
+bindings in vuejs:
+ to assign values to HTML attributes, we need to bind it with the directive v-bind 
+ example:
+ <input:value="text"
+  @input="event => text = event.target.value">
+  
+  ====><input v-model="text"><==========
+
+
+  lifecycle og vuejs
+  1)before create:Called when the instance is initialized.
+  Details
+  Called immediately when the instance is initialized, after props resolution, before processing other options such as data() or computed.
+  2)created: Called after the instance has finished processing all state-related options.
+  When this hooks is called, the following have been set up: reactive data, computed properties, methods, and watchers. However, the mounting phase has not been started.
+  3)before mount:the component has finished setting up its reactive state, but no DOM nodes have been created yet
+  4)mounted:All of its synchronous child components have been mounted (does not include async components or components inside <Suspense> trees).
+  Its own DOM tree has been created and inserted into the parent container. Note it only guarantees that the component's DOM tree is in-document if the application's root container is also in-document.
+  5)before update:Called right before the component is about to update its DOM tree due to a reactive state change.
+  Details:
+  This hook can be used to access the DOM state before Vue updates the DOM. It is also safe to modify component state inside this hook
+  6)updated:Called after the component has updated its DOM tree due to a reactive state change.
+  7)beforeunmount:Called right before a component instance is to be unmounted.
+  When this hook is called, the component instance is still fully functional.
+  8)unmounted:Called after the component has been unmounted.
+  details:
+  A component is considered unmounted after:
+  All of its child components have been unmounted.
+  All of its associated reactive effects (render effect and computed / watchers created during setup()) have been stopped.
+
+=>>>>>>>>>>>>>>lazy loading<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<=
+it is an approach by which all the scripts are not loaded on the DOM as the application starts. Instead, they’re only loaded when requested, which makes the JavaScript bundle size very small at initial load.

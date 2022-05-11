@@ -90,12 +90,38 @@ import AS10q1 from '@/components/Assignment-11(28)/q1'
 import AS10q2 from '@/components/Assignment-11(28)/q2'
 
 import ScrappinG from '@/components/Assignment-11(28)/q3'
+///// may 10 /////nextTick///////
 
-
+import NextTick from '@/components/promises/nextick'
+import SeT from '@/components/promises/Settimeout'
+import ArroW from '@/components/promises/arrowfunction'
+import QSTn1 from '@/components/ninjainterview/Qst1'
+import QSTn2 from '@/components/ninjainterview/Qst2'
+import FormS from '@/components/Bootstrapvue/Forms'
+/////component communication//////////////
+import ParentComponenet from '/src/parent1'
+import ParentComponenet2 from '/src/parent2'
+import ParentComponenet3 from '/src/parent3'
+import ComponentOne from '@/components/communication/Bus1'
+import FilterS from '@/components/practice/filters'
 
 vue.use(Router)
 
 const routes = [
+    /////component communication//////////////
+    { path: '/p1', name: "ParentComponenet", component: ParentComponenet },
+    { path: '/p2', name: "ParentComponenet2", component: ParentComponenet2 },
+    { path: '/p3', name: "ParentComponenet3", component: ParentComponenet3 },
+    { path: '/b1', name: "ComponentOne", component: ComponentOne },
+    { path: '/f1', name: "FilterS", component: FilterS },
+    //////// may 10 ///nexttick//////
+    { path: '/next', name: "NextTick", component: NextTick },
+    { path: '/set', name: "SeT", component: SeT },
+    { path: '/arrow', name: "ArroW", component: ArroW },
+    { path: '/N1', name: "QSTn1", component: QSTn1 },
+    { path: '/N2', name: "QSTn2", component: QSTn2 },
+    { path: '/N3', name: "FormS", component: FormS },
+
     //////assignment-11//////////////
     { path: '/A7', name: "AS10q1", component: AS10q1 },
     { path: '/A8', name: "AS10q2", component: AS10q2 },

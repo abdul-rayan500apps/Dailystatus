@@ -11,6 +11,7 @@ import VueAxios from 'vue-axios'
 
 
 Vue.config.productionTip = false
+export const bus = new Vue();
 Vue.use(VueCookies);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
